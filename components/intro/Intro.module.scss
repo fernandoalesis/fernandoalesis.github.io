@@ -1,0 +1,74 @@
+@import"../../styles/variables.scss";
+
+.Container{
+    text-align: right;
+
+
+
+}
+
+.slide{
+
+    a span:first-child {
+        display: inline-block;
+        transition: 300ms;
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        -o-transition: 300ms;
+}
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        transition:300ms ;
+        -webkit-transition:300ms ;
+        -moz-transition:300ms ;
+        -ms-transition:300ms ;
+        -o-transition:300ms ;
+}
+
+
+    a span:last-child {
+        position: absolute;
+        transition: 300ms;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -webkit-transition: 300ms;
+        -moz-transition: 300ms;
+        -ms-transition: 300ms;
+        -o-transition: 300ms;
+}
+    a span {
+        transition: transform 0.2s ease-out;
+
+    }
+
+    a:hover span:first-child {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+
+    a:hover span:last-child {
+        transform: none;
+
+    }
+    a:hover span:last-child h2{
+        color: coral;
+
+    }
+}

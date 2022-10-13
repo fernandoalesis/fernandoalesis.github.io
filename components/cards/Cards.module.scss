@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.Card{
+    background-color: $black;
+    text-align: justify;
+    padding: 1rem .5rem;
+    border: 3px solid $primary-color;
+    border-radius: 4px;
+    filter:opacity(.8) ;
+    -webkit-filter:opacity(.8) ;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: $primary-color;
+
+    h4{
+        text-decoration: underline;
+
+    }
+    p{
+        color:$light-color;
+    }
+//*Animate.css buscar
+
+
+}
+

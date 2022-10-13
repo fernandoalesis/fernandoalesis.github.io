@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins';
+
+
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    align-items: start;
+
+    @include tablet{
+        grid-template-columns: 1fr;
+    }
+    color: $light-color;
+    text-align: justify;
+
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        padding: 0 1rem;
+        font-size: .8rem;
+
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+
+
+        }
+
+        li{
+            list-style-type: none;
+            box-sizing: border-box;
+
+
+            span{
+                color: $primary-color;
+            }
+
+
+
+        }
+    }
+}
+
+.img{
+    border: 3px solid $primary-color;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2rem auto;
+    max-width: 450px;
+
+
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    margin-top: 1rem;
+    @include tablet{
+        grid-template-columns:  1fr;
+    }
+
+}

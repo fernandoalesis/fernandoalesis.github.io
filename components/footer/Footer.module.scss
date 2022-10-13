@@ -1,0 +1,87 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins';
+
+.Footer{
+    background: $black;
+    max-width: 1000px;
+    position: relative;
+
+    h4{
+        text-transform: uppercase;
+        color: coral;
+        font-weight: lighter;
+        text-align: center;
+    }
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    @include tablet{
+        grid-template-columns: 1fr;
+    }
+    ul{
+        display: flex;
+        gap: 1rem;
+        padding-left: 0;
+
+
+        li{
+            list-style-type: none;
+            margin: 0;
+
+            a{
+                color: $primary-color;
+                font-size: 2rem;
+                transition: 300ms;
+                &:hover{
+                    color: coral;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 300px;
+        input{
+            background: $primary-color;
+            border:3px solid $primary-color;
+            box-shadow: none;
+            border-radius: 4px;
+            transition:300ms ;
+            color: $light-color;
+            height: 2rem;
+            font-family:  "JBMono-Thin";
+            &:hover{
+                border:3px solid coral;
+                transition:300ms;
+               }
+            &::placeholder{
+                color: coral;
+
+            }
+           }
+        textarea{
+            background: $primary-color;
+            border:3px solid $primary-color;
+            box-shadow: none;
+            border-radius: 4px;
+            transition:300ms ;
+            color: $light-color;
+            font-family:  "JBMono-Thin";
+            &:hover{
+                border:3px solid coral;
+                transition:300ms;
+            }
+            &::placeholder{
+                color: coral;
+            }
+            }
+
+    }
+}
+

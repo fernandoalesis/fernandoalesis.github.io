@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+
+
+
+.button{
+    height: 2rem;
+    width: 100%;
+    color:$primary-color;
+    text-align: center;
+    background:$black;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: 2px solid $primary-color;
+    transition: 300ms;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    margin-top: 1rem ;
+    font-family: 'JBMono-Thin';
+}
+.button:hover{
+    background:$primary-color;
+    color:$secondary-color;
+}
