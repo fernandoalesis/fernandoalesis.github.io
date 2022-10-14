@@ -63,7 +63,7 @@ const Footer = () => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:3000"
+              value="https://fernandoalesis.github.io/"
             ></input>
             <input type="hidden" name="_captcha" value="false"></input>
           </form>
