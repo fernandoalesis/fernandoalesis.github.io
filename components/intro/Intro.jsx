@@ -15,7 +15,7 @@ const Intro = () => {
             <h2>About</h2>
           </span>
         </a>
-        <a href="#0">
+        <a href="#Projects">
           <span>
             <h2>Developer</h2>
           </span>

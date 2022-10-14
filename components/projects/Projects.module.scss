@@ -71,11 +71,6 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
-
-
-
-
-
     .imgTv{
         height: 383px;
         width: 613px;
@@ -86,13 +81,7 @@
         z-index: 1;
         position: absolute;
         border: 1.5px solid rgba(34, 34, 34, 0.527);
-
-
-
-
-
-
-}
+    }
      @include tablet{
         height: 600px;
         width: 600px;
@@ -101,9 +90,7 @@
             width: 459px;
             margin-left: 11.65%;
             margin-top:21.3%;
-
         }
-
         }
     @include mobile{
         height: 300px;
@@ -115,8 +102,4 @@
             margin-top:21.35%;
         }
     }
-
-
-
-
 }
