@@ -10,8 +10,9 @@ body, main, section {
   // line-height: /
   font-size: 24px;
   font-family:  "JBMono-Thin";
+  text-transform: uppercase;
   white-space: wrap;
-  letter-spacing: -0.1rem;
+  letter-spacing: normal;
   @include tablet{
     font-size: 1rem;
   }
@@ -19,29 +20,40 @@ body, main, section {
 }
 @font-face {
   font-family: "JBMono-Thin";
-  src: url(../assets/Fonts/JetBrainsMono-Thin.ttf);
+  src: url(../assets/Fonts/AvenueX.ttf);
 }
 
 p,ul,ol{
   margin-bottom: 2em;
+
+
 }
 
 h1,h2,h3,h4,h5{
   padding: 0;
   margin:  0;
+
+
 }
 
 * {
   box-sizing: border-box;
+
 }
 section{
   min-height: 100vh;
-  min-width: 100vw;
+  width: 100vw;
+  overflow: hidden;
   padding: 3%;
+  z-index: 10;
+
+
+
+
 }
 
 section.Home{
-  background: $primary-color;
+  background:transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,11 +62,12 @@ section.Home{
 }
 
 section.Footer{
-  background: $black;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 section.Projects{
   background:transparent;
@@ -62,11 +75,14 @@ section.Projects{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+
+
 }
 
 section.Container{
   margin:0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
 
 }
 
@@ -84,8 +100,140 @@ h2,h1{
 
 
 main{
-  background:repeating-linear-gradient(-23deg, #233c6f 0px, #233c6f 50px, #1d325c 50px, #1d325c 100px);
-  background-attachment: fixed;
+  z-index: 10;
 }
 
+
+//background stars
+
+@keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 1000px);
+	}
+}
+@-webkit-keyframes move-background {
+  from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 1000px);
+	}
+}
+
+@-moz-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 1000px);
+	}
+}
+
+    @-webkit-keyframes move-background {
+	from {
+		-webkit-transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		-webkit-transform: translate3d(1000px, 0px, 1000px);
+	}
+}
+
+.background-container{
+	position: fixed;
+	top: 0;
+	left:0;
+	bottom: 0;
+	right: 0;
+}
+
+.stars {
+ background: black url(../assets/Images/stars.png) repeat;
+ position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+  	z-index: 0;
+}
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+
+}
+
+
+
+/*Fades*/
+@keyframes fade-right {
+  from {opacity: 0; transform: translateX(-30%)}
+  to {opacity: 1; transform: translateX(0px)}
+}
+
+.fadeIn-right {
+ animation: .9s ease 0s normal forwards 1 fade-right;
+}
+
+@keyframes fade-left {
+  from {opacity: 0; transform: translateX(20%)}
+  to {opacity: 1; transform: translateX(0px)}
+}
+
+.fadeIn-left {
+ animation: .9s ease 0s normal forwards 1 fade-left;
+}
+
+@keyframes fade-up {
+ 0% {opacity: 0; transform: translatey(50%)}
+ 50% {opacity: .5; transform: translatey(-10%)}
+ 100% {opacity: 1; transform: translatey(0%)}
+}
+
+.fadeIn-up {
+ animation: .9s ease .25s normal forwards 1 fade-up;
+}
+
+.fadeIn-up2 {
+ animation: .9s ease .5s normal forwards 1 fade-up;
+}
+
+.fadeIn-up3 {
+ animation: .9s ease .75s normal forwards 1 fade-up;
+}
+
+@keyframes fade-upLeft {
+  from {
+    opacity: 0;
+    transform: translate(20%, 20%);
+ }
+   to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+ }
+}
+
+.fade-upLeft {
+ animation: .9s ease 0s normal forwards 1 fade-upLeft;
+}
+
+.hide {
+ opacity: 0;
+}
 

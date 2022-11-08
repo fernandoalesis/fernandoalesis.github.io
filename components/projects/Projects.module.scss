@@ -2,6 +2,9 @@
 @import '../../styles/mixins';
 
 .Projects{
+    z-index: 10;
+    position: relative;
+
 
 
     .grid_container{
@@ -10,6 +13,8 @@
         gap: 1rem;
         align-items: center;
         justify-content: center;
+        z-index: 10;
+
         @include tablet{
             grid-template-columns: repeat(2, 1fr);
         }
@@ -24,6 +29,8 @@
             height: 200px;
             padding: 3%;
             text-align: justify;
+            z-index: 10;
+
 
             a{
                 color:coral;

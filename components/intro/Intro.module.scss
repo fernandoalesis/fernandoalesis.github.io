@@ -11,28 +11,28 @@
 
     a span:first-child {
         display: inline-block;
-        transition: 300ms;
-        -webkit-transition: 300ms;
-        -moz-transition: 300ms;
-        -ms-transition: 300ms;
-        -o-transition: 300ms;
+        transition: 600ms;
+        -webkit-transition: 600ms;
+        -moz-transition: 600ms;
+        -ms-transition: 600ms;
+        -o-transition: 600ms;
 }
     a {
         display: block;
         position: relative;
         overflow: hidden;
         text-decoration: none;
-        transition:300ms ;
-        -webkit-transition:300ms ;
-        -moz-transition:300ms ;
-        -ms-transition:300ms ;
-        -o-transition:300ms ;
+        transition:600ms ;
+        -webkit-transition:600ms ;
+        -moz-transition:600ms ;
+        -ms-transition:600ms ;
+        -o-transition:600ms ;
 }
 
 
     a span:last-child {
         position: absolute;
-        transition: 300ms;
+        transition: 600ms;
         top: 0;
         right: 0;
         bottom: 0;
@@ -45,15 +45,18 @@
         -moz-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
         -o-transform: translateX(-100%);
-        -webkit-transition: 300ms;
-        -moz-transition: 300ms;
-        -ms-transition: 300ms;
-        -o-transition: 300ms;
+        -webkit-transition: 600ms;
+        -moz-transition: 600ms;
+        -ms-transition: 600ms;
+        -o-transition: 600ms;
 }
     a span {
-        transition: transform 0.2s ease-out;
-
-    }
+        transition: transform 0.5s ease-out;
+        -webkit-transition: transform 0.5s ease-out;
+        -moz-transition: transform 0.5s ease-out;
+        -ms-transition: transform 0.5s ease-out;
+        -o-transition: transform 0.5s ease-out;
+}
 
     a:hover span:first-child {
         transform: translateX(100%);

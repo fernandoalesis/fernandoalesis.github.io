@@ -2,12 +2,16 @@
 @import '../../styles/mixins';
 
 
-
+.About{
+    z-index: 10;
+    position: relative;
+}
 .grid_container{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
     align-items: start;
+
 
     @include tablet{
         grid-template-columns: 1fr;
@@ -32,6 +36,7 @@
         li{
             list-style-type: none;
             box-sizing: border-box;
+            display: flex;
 
 
             span{
@@ -48,18 +53,28 @@
     border: 3px solid $primary-color;
     border-radius: 4px;
     overflow: hidden;
-    margin: 2rem auto;
-    max-width: 450px;
-
-
+    margin: 0 auto;
+    aspect-ratio: 3/3.5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    @include tablet{
+        max-height: 70vh;
+    }
 }
 .card_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:1rem;
     margin-top: 1rem;
+
+
+
     @include tablet{
         grid-template-columns:  1fr;
     }
 
 }
+
+
