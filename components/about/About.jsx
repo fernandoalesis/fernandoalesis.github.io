@@ -108,7 +108,13 @@ const About = () => {
           </Fade>
 
           <Fade bottom>
-            <Button>Resume &darr;</Button>
+            <a
+              href="/CVFernando+Gil.pdf"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Resume &darr;</Button>
+            </a>
           </Fade>
         </div>
       </div>

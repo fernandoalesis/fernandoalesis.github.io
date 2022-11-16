@@ -5,10 +5,10 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import Tateti from "../../assets/Images/tateti.png";
 import Memotest from "../../assets/Images/memotest.png";
-import Costado from "../../assets/Images/costado.png";
+import Logo from "../../assets/Images/logo.png";
 
 const Projects = () => {
-  const [Img, setImg] = useState(Costado);
+  const [Img, setImg] = useState(Logo);
 
   return (
     <div className={styles.Projects}>
@@ -19,7 +19,7 @@ const Projects = () => {
         <div className={styles.tv} style={{ zIndex: "2" }}>
           <div
             className={styles.imgTv}
-            style={{ zIndex: "1", backgroundColor: "#222" }}
+            style={{ zIndex: "1", backgroundColor: "#1d1d1d" }}
           >
             <Image
               alt="Mountains"
@@ -33,7 +33,12 @@ const Projects = () => {
       </Fade>
       <Fade bottom cascade>
         <div className={styles.grid_container}>
-          <div className={styles.channel}>
+          <div
+            className={styles.channel}
+            onClick={() => {
+              setImg(Logo);
+            }}
+          >
             <h3>Ecommerce</h3>
             <p>in procces</p>
             <div className="links">
@@ -45,7 +50,12 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <div className={styles.channel}>
+          <div
+            className={styles.channel}
+            onClick={() => {
+              setImg(Logo);
+            }}
+          >
             <h3>Reportify</h3>
             <p>Reports of Spotify using our API</p>
             <div className="links">
@@ -91,7 +101,12 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <div className={styles.channel}>
+          <div
+            className={styles.channel}
+            onClick={() => {
+              setImg(Logo);
+            }}
+          >
             <h3>Art Gallery</h3>
             <p>Gallery of best artist pics</p>
             <div className="links">

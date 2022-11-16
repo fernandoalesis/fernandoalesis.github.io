@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import React, { useEffect, useState, useRef } from "react";
+
 import About from "../components/about/About";
 import Footer from "../components/footer/Footer";
 import Intro from "../components/intro/Intro";
 import Projects from "../components/projects/Projects";
-import Mars from "../components/mars/Mars";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Home = () => {
   return (
